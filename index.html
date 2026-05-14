@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backup Roll Kevlar Wrap Fixture | VTSU Capstone</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --ink:#172033;
+      --muted:#59657a;
+      --card:#ffffff;
+      --line:#d9e0ea;
+      --accent:#006b7f;
+      --accent2:#00a7b5;
+      --dark:#101827;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial, Helvetica, sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+    img{max-width:100%;display:block}
+    a{color:inherit}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+    .nav{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}
+    .brand img{width:120px;height:auto}
+    .links{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+    .links a{text-decoration:none;font-weight:700;font-size:.92rem;padding:8px 10px;border-radius:999px;color:#263246}
+    .links a:hover{background:#eaf3f6;color:var(--accent)}
+    .hero{background:radial-gradient(circle at top right, rgba(0,167,181,.24), transparent 32%), linear-gradient(135deg,#101827,#20304b 58%,#006b7f);color:white;padding:82px 20px 70px}
+    .hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:.16em;color:#9ee8ef;font-size:.82rem;font-weight:800;margin-bottom:12px}
+    h1{font-size:clamp(2.15rem,5vw,4.45rem);line-height:1.04;margin-bottom:18px;letter-spacing:-.04em}
+    .hero p{font-size:1.1rem;color:#d8e5ee;max-width:760px;margin-bottom:24px}
+    .hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:22px;padding:14px;box-shadow:0 24px 70px rgba(0,0,0,.28)}
+    .hero-card img{border-radius:16px;background:#fff}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .chip{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:7px 12px;color:#eef9fb;font-weight:700;font-size:.9rem}
+    main{max-width:1180px;margin:auto;padding:34px 20px 70px}
+    section{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px;margin:22px 0;box-shadow:0 12px 35px rgba(16,24,39,.06)}
+    .section-title{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:22px}
+    h2{font-size:clamp(1.55rem,3vw,2.35rem);line-height:1.15;letter-spacing:-.025em}
+    h3{font-size:1.15rem;margin:18px 0 8px;color:#243045}
+    .lead{font-size:1.07rem;color:#40506a;max-width:860px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid var(--line);border-radius:16px;padding:20px;background:#fbfdff}
+    .card h3{margin-top:0;color:var(--accent)}
+    .metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+    .metric{background:#eef7fa;border:1px solid #cbe5eb;border-radius:16px;padding:18px;text-align:center}
+    .metric strong{font-size:1.65rem;display:block;color:var(--accent);line-height:1.1}
+    .metric span{color:#536174;font-weight:700;font-size:.88rem}
+    ul{padding-left:20px;color:#40506a}
+    .figure{border:1px solid var(--line);background:#f8fafc;border-radius:18px;padding:12px;overflow:hidden}
+    .figure img{border-radius:12px;margin:auto;max-height:430px;object-fit:contain}
+    .caption{font-size:.86rem;color:#637187;margin-top:9px;text-align:center}
+    .process{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}
+    .step{background:#f2f6fb;border:1px solid var(--line);border-radius:15px;padding:16px;text-align:center;font-weight:800;color:#263246;position:relative}
+    .step small{display:block;color:var(--muted);font-weight:700;margin-top:4px}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;margin-top:18px}
+    table{width:100%;border-collapse:collapse;background:#fff;min-width:700px}
+    th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+    th{background:#eef4f8;color:#263246;font-size:.92rem;text-transform:uppercase;letter-spacing:.04em}
+    tr:last-child td{border-bottom:none}
+    .dark{background:linear-gradient(135deg,#111827,#243045);color:white;border:none}
+    .dark h2,.dark h3{color:white}
+    .dark .lead,.dark p,.dark li{color:#d6dfec}
+    .dark .card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.14)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .gallery .figure img{height:235px;width:100%;object-fit:cover}
+    footer{padding:28px 20px;text-align:center;color:#667387;border-top:1px solid var(--line);background:#fff}
+    .small{font-size:.92rem;color:#667387}
+    @media(max-width:900px){
+      .hero-inner,.grid-2,.grid-3{grid-template-columns:1fr}
+      .metric-grid{grid-template-columns:repeat(2,1fr)}
+      .process{grid-template-columns:1fr 1fr}
+      .links{display:none}
+      section{padding:24px}
+      .gallery{grid-template-columns:1fr}
+    }
+    @media(max-width:520px){.metric-grid,.process{grid-template-columns:1fr}.brand img{width:96px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <nav class="nav">
+      <div class="brand"><img src="assets/image1.png" alt="Hazelett logo"><span>VTSU Capstone</span></div>
+      <div class="links">
+        <a href="#goal">Goal</a><a href="#requirements">Requirements</a><a href="#mechanical">Mechanical</a><a href="#electrical">Electrical</a><a href="#software">Programming</a><a href="#cost">Cost</a><a href="#lessons">Lessons</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Vermont State University · Spring 2026</div>
+        <h1>Backup Roll Kevlar Wrap Fixture</h1>
+        <p>Design and build a custom automated machine to replace Hazelett’s current backup roll Kevlar wrapping process with a safer, more repeatable, and more operator-friendly system.</p>
+        <div class="chips">
+          <span class="chip">Automated Traverse</span><span class="chip">50 RPM Max</span><span class="chip">300 lb Capacity</span><span class="chip">100 in Rolls</span><span class="chip">Mobile Fixture</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/image7.png" alt="CAD model of Backup Roll Kevlar Wrap Fixture">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="goal">
+      <div class="section-title">
+        <div>
+          <h2>Project Goal</h2>
+          <p class="lead">The project focused on creating an automated machine for wrapping Kevlar string around Hazelett backup rolls. The design improves control, repeatability, safety, and usability compared with the existing process.</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="figure"><img src="assets/image3.png" alt="Current machine used at Hazelett"><div class="caption">Current machine used at Hazelett.</div></div>
+        <div class="card">
+          <h3>Why the project was needed</h3>
+          <ul>
+            <li>Old equipment had limited documentation.</li>
+            <li>The current setup used a large footprint.</li>
+            <li>Safety requirements needed to be improved.</li>
+            <li>The wrapping process needed better control and repeatability.</li>
+            <li>Operators needed a machine that was easier to use.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="requirements">
+      <h2>Project Parameters</h2>
+      <p class="lead">The final design was guided by mechanical, electrical, safety, and operator-use requirements.</p>
+      <div class="metric-grid">
+        <div class="metric"><strong>50</strong><span>RPM max rotational speed</span></div>
+        <div class="metric"><strong>100”</strong><span>maximum roll length</span></div>
+        <div class="metric"><strong>300 lb</strong><span>capacity</span></div>
+        <div class="metric"><strong>2</strong><span>Kevlar rolls held</span></div>
+      </div>
+      <div class="grid-3" style="margin-top:18px">
+        <div class="card"><h3>Automation</h3><p>Automated traverse with locating sensors and automatic start.</p></div>
+        <div class="card"><h3>Mobility</h3><p>Mobile and ergonomically friendly frame design with caster wheels.</p></div>
+        <div class="card"><h3>Containment</h3><p>Drop containment was included to help protect the roll and surrounding equipment.</p></div>
+      </div>
+    </section>
+
+    <section id="mechanical">
+      <h2>Mechanical Design</h2>
+      <p class="lead">The mechanical system was split into three main subassemblies: the linear traverse, backup roll fixturing, and the frame structure / Kevlar cart.</p>
+      <div class="process">
+        <div class="step">Linear Traverse<small>rack, pinion, slide</small></div>
+        <div class="step">Routing Head<small>Kevlar feed path</small></div>
+        <div class="step">Roll Fixturing<small>supports roll rotation</small></div>
+        <div class="step">Frame / Cart<small>60×60 mm extrusion</small></div>
+        <div class="step">Drop Protection<small>triangular brackets</small></div>
+      </div>
+      <div class="gallery" style="margin-top:22px">
+        <div class="figure"><img src="assets/image8.png" alt="Linear traverse CAD"><div class="caption">Linear traverse with rack and pinion motion.</div></div>
+        <div class="figure"><img src="assets/image13.png" alt="Backup roll fixturing CAD"><div class="caption">Backup roll fixturing with gearmotor, coupling, and mounting adapter.</div></div>
+        <div class="figure"><img src="assets/image14.png" alt="Frame structure"><div class="caption">Table/cart frame made from aluminum extrusion.</div></div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Subassembly</th><th>Main components</th><th>Purpose</th></tr>
+          <tr><td>Linear Traverse</td><td>Rack and pinion, stepper motor, linear slide, routing head, fin sensor, cat track, control panel.</td><td>Moves the Kevlar routing head along the roll during wrapping.</td></tr>
+          <tr><td>Backup Roll Fixturing</td><td>DC gearmotor, custom mount, shaft coupling, sliding pillow block, roll mounting adapter.</td><td>Supports and rotates the magnetic backup roll.</td></tr>
+          <tr><td>Table / Cart Structure</td><td>60×60 mm aluminum extrusion, compatible brackets, caster wheels, lower Kevlar storage.</td><td>Provides a strong, adjustable, mobile base for the machine.</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="electrical" class="dark">
+      <h2>Electrical Design</h2>
+      <p class="lead">The electrical system used a custom board layout to control the motors and simplify wiring. The STM32 was connected through header pins for repairability, while the motor driver section used wider traces for high-power paths.</p>
+      <div class="grid-2">
+        <div class="figure"><img src="assets/image15.jpeg" alt="Electrical schematic"><div class="caption">Main electrical schematic.</div></div>
+        <div class="figure"><img src="assets/image18.jpeg" alt="PCB layout"><div class="caption">Two-layer PCB layout with high-power motor driver traces.</div></div>
+      </div>
+      <div class="grid-3" style="margin-top:18px">
+        <div class="card"><h3>Power</h3><p>A 12 V regulator powers the STM32, with 3.3 V and 5 V sourced from the STM32.</p></div>
+        <div class="card"><h3>Motor Driver</h3><p>The motor driver is included on the board, with 3.5 mm traces for high-power paths.</p></div>
+        <div class="card"><h3>ESTOP</h3><p>The ESTOP circuit is separate from the board and stops all motion until power is cycled and the ESTOP is released.</p></div>
+      </div>
+    </section>
+
+    <section id="software">
+      <h2>Programming and Controls</h2>
+      <p class="lead">The program uses FreeRTOS for simultaneous stepper and DC motor control. Motion is handled with a state machine, and external interrupts are used for the overtravel sensor and ESTOP.</p>
+      <div class="grid-2">
+        <div>
+          <div class="card"><h3>Control approach</h3><ul><li>FreeRTOS for simultaneous tasks.</li><li>State machine control for operation sequence.</li><li>External interrupts for overtravel and ESTOP events.</li><li>ESTOP interrupt immediately stops all motion.</li></ul></div>
+        </div>
+        <div class="figure"><img src="assets/image19.png" alt="Programming flowchart"><div class="caption">Program state machine / flowchart.</div></div>
+      </div>
+    </section>
+
+    <section id="cost">
+      <div class="grid-2">
+        <div>
+          <h2>BOM and Schedule</h2>
+          <p class="lead">The project BOM totaled $5,732.25. The original GANTT chart was used more as a general reference than a strict schedule because part acquisition, PCB design delays, and changing project factors affected the timeline.</p>
+          <div class="metric-grid" style="grid-template-columns:1fr 1fr">
+            <div class="metric"><strong>$5,732.25</strong><span>Total project cost</span></div>
+            <div class="metric"><strong>Spring 2026</strong><span>Capstone timeline</span></div>
+          </div>
+        </div>
+        <div class="figure"><img src="assets/image21.png" alt="GANTT chart"><div class="caption">Project GANTT chart used as a planning reference.</div></div>
+      </div>
+    </section>
+
+    <section id="improvements">
+      <h2>Future Improvements</h2>
+      <div class="grid-3">
+        <div class="card"><h3>Automation</h3><p>Automate string cutting and automate string adherent.</p></div>
+        <div class="card"><h3>Structure</h3><p>Use a welded steel frame for a more permanent industrial version.</p></div>
+        <div class="card"><h3>Wiring</h3><p>Improve wire harness organization and serviceability.</p></div>
+        <div class="card"><h3>Wrapping Capacity</h3><p>Add the ability to wrap up to four fins at a time.</p></div>
+        <div class="card"><h3>Testing</h3><p>Test each completed section earlier to catch problems sooner.</p></div>
+        <div class="card"><h3>Documentation</h3><p>Keep the design easier to troubleshoot, repair, and update.</p></div>
+      </div>
+    </section>
+
+    <section id="lessons">
+      <h2>Lessons Learned</h2>
+      <div class="grid-2">
+        <div class="card"><h3>Standardization</h3><p>Parts and hardware should use one standard of measurement when possible. Mixing sizes and specs made the project harder to assemble and manage.</p></div>
+        <div class="card"><h3>Order Parts Early</h3><p>Parts should be ordered early so there is more time for troubleshooting and final assembly.</p></div>
+        <div class="card"><h3>Plan More Troubleshooting Time</h3><p>More issues showed up near the end of the project, so extra troubleshooting time would have helped.</p></div>
+        <div class="card"><h3>Test Earlier</h3><p>Testing smaller sections as they were completed would have helped find problems sooner and make the final assembly smoother.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Backup Roll Kevlar Wrap Fixture</strong> · Noah Burleson, Thomas Dede, Luke Bolton, Weston Black · Vermont State University</p>
+    <p class="small">Website generated from the VTSU Capstone Project presentation.</p>
+  </footer>
+</body>
+</html>
